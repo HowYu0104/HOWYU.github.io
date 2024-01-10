@@ -1,0 +1,547 @@
+@media only screen and (max-width: 768px) {
+    .main-container {
+        width: 100%;
+        height: 1080px !important;
+        margin: 20px;
+
+
+    }
+
+    .poster-container {
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .ticket-container {
+        width: 540px;
+        top: 0;
+        height: auto;
+    }
+
+    .text1 {
+        font-size: 36px;
+
+        text-align: center;
+
+    }
+
+    .pic1 {
+        height: 200px;
+
+        background-position: center center;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    nav li {
+        display: block;
+
+        margin-bottom: 10px;
+
+    }
+
+    nav a {
+        padding: 10px;
+
+    }
+
+    .btm {
+        height: auto;
+
+    }
+
+    .專輯,
+    .專輯2,
+    .專輯3,
+    .專輯4,
+    .專輯5,
+    .專輯6,
+    .專輯7,
+    .專輯8,
+    .專輯9 {
+        width: 100%;
+
+        margin-right: 0;
+
+        margin-bottom: 20px;
+
+    }
+
+    .ticket-container {
+        width: 500px !important;
+        height: 960px !important;
+    }
+
+    .R1,
+    .R2,
+    .R3,
+    .R4,
+    .R5,
+    .R6,
+    .R6,
+    .R6,
+    .R7,
+    .R8,
+    .R9,
+    .R10,
+    .R11,
+    .R12,
+    .R13,
+    .R14,
+    .R15 {
+        margin-top: 20px !important;
+    }
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #333;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.text1 {
+    font-size: 72px;
+    color: #ffffff;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.pic1 {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.item {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+}
+
+.btm {
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background-color: rgba(0, 3, 8, 0.64);
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    height: 50px;
+    z-index: 1000;
+    margin-top: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.專輯,
+.專輯2,
+.專輯3,
+.專輯4,
+.專輯5,
+.專輯6,
+.專輯7,
+.專輯8,
+.專輯9 {
+    margin: auto;
+    display: flex;
+    width: calc(25% - 20px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+}
+
+.main-container {
+    width: 350px;
+    height: 760px;
+    position: relative;
+    margin: 50 50px;
+}
+
+.poster-container {
+    width: 250px;
+    height: 0px;
+    position: absolute;
+    top: 100;
+    left: 20px;
+    z-index: 999;
+}
+
+.poster {
+    width: 100%;
+    box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+}
+
+.ticket-container {
+    background: #fff;
+    width: 720px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    box-shadow: 0 5px 20px 3px rgba(0, 0, 0, 0.6);
+    opacity: 0;
+}
+
+.main-container:hover .ticket-container {
+    opacity: 1;
+    animation: bounceIn 0.6s linear;
+}
+
+@keyframes bounceIn {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    20% {
+        -webkit-transform: scale3d(1.03, 1.03, 1.03);
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.01, 1.01, 1.01);
+        transform: scale3d(1.01, 1.01, 1.01);
+    }
+
+    80% {
+        -webkit-transform: scale3d(0.97, 0.97, 0.97);
+        transform: scale3d(0.97, 0.97, 0.97);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+
+
+.ticket__content {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.ticket__movie-title {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    height: 50px;
+    font-size: 25px;
+    margin-top: 0px;
+}
+
+.專輯歌曲,
+.專輯歌曲2,
+.專輯歌曲3,
+.專輯歌曲4,
+.專輯歌曲5,
+.專輯歌曲6,
+.專輯歌曲7,
+.專輯歌曲8,
+.專輯歌曲9 {
+    color: #999;
+    font-size: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ticket__buy-btn {
+    cursor: pointer;
+    width: 100%;
+    background: #2f2f2f;
+    color: white;
+    padding: 15px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.專輯歌曲,
+.專輯歌曲2,
+.專輯歌曲3,
+.專輯歌曲4,
+.專輯歌曲5,
+.專輯歌曲6,
+.專輯歌曲7,
+.專輯歌曲8,
+.專輯歌曲9 {
+    display: flex;
+    justify-content: center;
+    justify-self: unset;
+    align-items: center;
+}
+
+.R1,
+.R2,
+.R3,
+.R4,
+.R5,
+.R6,
+.R6,
+.R6,
+.R7,
+.R8,
+.R9,
+.R10,
+.R11,
+.R12,
+.R13,
+.R14,
+.R15 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    display: block !important;
+    margin-bottom: 10px !important;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #e2e2e2;
+    font-size: 15px;
+    border-radius: 5px;
+    top: 150px;
+
+    width: 120px;
+    height: 100px;
+    margin-right: 10px;
+    writing-mode: horizontal-tb;
+    white-space: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.R1:hover,
+.R2:hover,
+.R3:hover,
+.R4:hover,
+.R5:hover,
+.R6:hover,
+.R6:hover,
+.R6:hover,
+.R7:hover,
+.R8:hover,
+.R9:hover,
+.R10:hover,
+.R11:hover,
+.R12:hover,
+.R13:hover,
+.R14:hover,
+.R15:hover {
+    background-color: #3d3d3d;
+    color: #fff;
+    font-size: 16px;
+}
+
+.album {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+}
+
+.album:nth-child(4n + 1) {
+    margin-left: 0;
+
+}
+
+.album:nth-child(n) {
+    margin-right: 20px;
+
+}
+
+.專輯:nth-child(4n + 1),
+.專輯2:nth-child(4n + 1),
+.專輯3:nth-child(4n + 1),
+.專輯4:nth-child(4n + 1),
+.專輯5:nth-child(4n + 1),
+.專輯6:nth-child(4n + 1),
+.專輯7:nth-child(4n + 1),
+.專輯8:nth-child(4n + 1),
+.專輯9:nth-child(4n + 1) {
+    margin-right: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.專輯-容器,
+.專輯-容器2,
+.專輯-容器3,
+.專輯-容器4,
+.專輯-容器5,
+.專輯-容器6,
+.專輯-容器7,
+.專輯-容器8,
+.專輯-容器9 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    margin: 0;
+    opacity: 0;
+    font: 1.6rem/1.875 'Avenir Next', sans-serif;
+}
+
+
+body.loaded {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    padding: 0 5%;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.banner .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: translate3d(0, 0, 0) scale(1.25);
+    background: black url(bnr-mv_3.png) no-repeat center center;
+    background-size: cover;
+}
+
+
+.loaded .banner .background {
+    transform: scale(1);
+    transition: 6.5s transform;
+}
+
+
+.banner h1 {
+    color: #EEE;
+    margin: 0;
+    line-height: 40rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 .3rem black;
+}
+
+main {
+    width: 90%;
+    margin: 5rem auto;
+}
+
+main p {
+    margin: 0 0 3rem 0;
+}

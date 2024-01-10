@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.pic1 {
+    height: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text1 {
+    font-size: 72px;
+    color: #ffffff;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.content::after {
+    content: "";
+    border-left: 1px solid #ddd;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.content img {
+    max-width: 50%;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.content:hover img {
+    transform: scale(1);
+}
+
+.content p {
+    flex: 1;
+    line-height: 2;
+    font-size: 16px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.content:hover p {
+    color: #ff6600;
+}
+
+.pic2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+.content2 {
+    width: 100%;
+    border-collapse: collapse;
+    flex: 1;
+    line-height: 2;
+    font-size: 16px;
+    color: #555;
+}
+
+.content2 img {
+    max-width: 80%;
+    max-height: 500px;
+    border-radius: 5px;
+    margin-right: 0;
+    margin-left: 50px;
+    transition: transform 0.3s ease;
+}
+
+.content2:hover img {
+    transform: scale(1.15);
+}
+
+.content2 td {
+    border: 1px solid #4e4d4d;
+    height: 100%;
+    margin-left: 0;
+}
+
+.btm {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 3, 8, 0.64);
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    height: 50px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    margin: 0;
+    opacity: 0;
+    font: 1.6rem/1.875 'Avenir Next', sans-serif;
+}
+
+
+body.loaded {
+    opacity: 1;
+    transition: 1s opacity;
+}
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 40rem;
+    padding: 0 5%;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+
+.banner .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black url(bnr-mv_3.png) no-repeat center center;
+    background-size: cover;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: translate3d(0, 0, 0) scale(1.25);
+}
+
+
+.loaded .banner .background {
+    transform: scale(1);
+    transition: 6.5s transform;
+}
+
+
+.banner h1 {
+    color: #EEE;
+    margin: 0;
+    line-height: 40rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 .3rem black;
+}
+
+main {
+    width: 90%;
+    margin: 5rem auto;
+}
+
+main p {
+    margin: 0 0 3rem 0;
+}
