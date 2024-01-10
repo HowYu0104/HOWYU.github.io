@@ -1,37 +1,43 @@
 @media only screen and (max-width: 768px) {
-   
+    .text1 {
+        font-size: 36px;
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
+        text-align: center;
 
-    nav li {
-        margin: 10px 0;
     }
 
     .pic1 {
+        height: 200px;
+
+        background-position: center center;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        text-align: center;
+
+    }
+
+    nav li {
+        display: block;
+
+        margin-bottom: 10px;
+
+    }
+
+    nav a {
+
+        padding: 10px;
+
+    }
+
+    .btm {
         height: auto;
-    }
 
-    .text1 {
-        font-size: 36px;
     }
-
-    .banner {
-        height: 20rem;
-    }
-
-    main {
-        width: 100%;
-        padding: 0 5%;
-    }
-
-    .size1, .size2, .size3, .size4, .size5 {
-        /* Adjust styles for background images on smaller screens */
-        background-size: contain;
-    }
-}
+   }
 body {
     margin: 0;
     padding: 0;
