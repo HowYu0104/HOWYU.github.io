@@ -37,6 +37,25 @@
         height: auto;
 
     }
+    .m1 {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .m1>div {
+        margin-bottom: 20px;
+
+    }
+
+    .example1 {
+        width: 100%;
+
+        max-width: none;
+
+        height: auto;
+    }
+    
    }
 body {
     margin: 0;
